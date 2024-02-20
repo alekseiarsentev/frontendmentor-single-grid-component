@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: min(400px, 100%);
+}
+
+.area1 {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.area2 {
+    background-color: hsl(179, 62%, 43%);
+    padding: 1rem;
+}
+
+.area3 {
+    background-color: hsl(179, 67%, 52%);
+    padding: 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-block: 1rem;
+}
+
+.area1 h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block: 1rem;
+}
+
+.area1 p {
+    color: hsl(203, 7%, 62%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-block: 1rem;
+    line-height: 1.6rem;
+}
+
+.dolla span {
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+.dolla {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-block: 1rem;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-block: 1rem;
+}
+
+button {
+    margin-block: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    background-color: hsl(71, 73%, 54%);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style: none;
+    color: hsl(204, 43%, 93%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+ul li {
+    line-height: 1.3rem;
+}
+
+@media screen and (min-width: 684px) {
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  width: min(650px, 100%);
+  border-radius: 1rem;
+}
+
+.area1 {
+    grid-column: 1 / span 2;
+}
+
+.area2 {
+    border-radius: 0 0 0 0.5rem;
+}
+
+.area3 {
+    border-radius: 0 0 0.5rem 0;
+}
+
+button {
+    width: 90%;
+}
+
+}
+

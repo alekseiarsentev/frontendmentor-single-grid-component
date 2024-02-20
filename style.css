@@ -86,7 +86,7 @@ h2 {
 
 p {
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     margin-block: 1rem;
 }
@@ -128,14 +128,17 @@ ul li {
 
 .area1 {
     grid-column: 1 / span 2;
+    padding: 2rem;
 }
 
 .area2 {
     border-radius: 0 0 0 0.5rem;
+    padding: 2rem;
 }
 
 .area3 {
     border-radius: 0 0 0.5rem 0;
+    padding: 2rem;
 }
 
 button {
